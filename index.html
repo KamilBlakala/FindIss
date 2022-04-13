@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch the ISS!</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1 class="main__heading">Wheres ISS now?</h1>
+        <div class="main__map" id="map"></div>
+        <p class="main__text">Iss tech info live</p>
+        <p class="main__text--t">Position</p>
+        <div class="main__pos">
+            <p class="main__pos-lat"></p>
+            <p class="main__pos-lon"></p>
+        </div>
+        <div class="main__container">
+            <p class="main__container-velocity">Velocity :</p>
+            <p class="main__container-altitude">Altitude :</p>
+            <p class="main__container-day">Day time :</p>
+        </div>
+        <div class="main__info">
+            <p class="main__info-1"></p>
+            <p class="main__info-2"></p>
+            <p class="main__info-3"></p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

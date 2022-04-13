@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 62.5%;
+}
+
+.main {
+	width: 90%;
+	height: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 0 auto;
+
+	&__heading {
+		font-size: 3rem;
+		text-align: center;
+		padding: 1em 0;
+		text-transform: uppercase;
+	}
+	&__map {
+		height: 500px;
+		width: 100%;
+		border: 2px solid black;
+		border-radius: 6px;
+	}
+	&__text {
+		padding: 1em;
+		font-size: 5rem;
+		text-transform: uppercase;
+		&--t {
+			font-size: 3rem;
+			padding: 0;
+		}
+	}
+	&__container,
+	&__info,
+	&__pos {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 4rem;
+	}
+	&__container {
+		width: 100%;
+		&-velocity,
+		&-day,
+		&-altitude {
+			width: 30%;
+			text-align: center;
+			padding: 0.5em 2em;
+		}
+	}
+	&__info {
+		width: 100%;
+		&-1,
+		&-2,
+		&-3 {
+			text-align: center;
+			width: 30%;
+			// padding: 0.5em 2em;
+		}
+	}
+	&__pos {
+		width: 100%;
+		text-align: center;
+		&-lat,
+		&-lon {
+			width: 45%;
+		}
+	}
+}
